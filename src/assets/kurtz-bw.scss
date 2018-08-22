@@ -1,3 +1,7 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
 $mat-primary: (
     50 : #e0e0e0,
     100 : #b3b3b3,
@@ -64,13 +68,12 @@ $mat-accent: (
     )
 );
 
-$mat-warn: (#b00020);
-
 $kurtz-primary: mat-palette($mat-primary);
 $kurtz-accent:  mat-palette($mat-accent);
-$kurtz-warn:    mat-palette($mat-warn);
 
-
-$kurtz-theme: mat-light-theme($kurtz-primary, $kurtz-accent, $kurtz-warn);
+$kurtz-theme: mat-light-theme($kurtz-primary, $kurtz-accent);
 
 @include angular-material-theme($kurtz-theme);
+
+$warn: #b00020;
+$myBlue: dodgerblue;

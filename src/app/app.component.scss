@@ -24,3 +24,9 @@ mat-sidenav-content {
     margin-left: -5px;
     cursor: pointer;
 }
+$warn: #b00020;
+
+.warning {
+    background-color: $warn;
+    margin-left: 5px;
+}
