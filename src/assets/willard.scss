@@ -1,9 +1,6 @@
 @import '~@angular/material/theming';
 @include mat-core();
 
-$mat-warn: (#b00020);
-
-
 $my-app-primary: mat-palette($mat-blue-grey);
 $my-app-accent:  mat-palette($mat-amber, 500, 900, A100);
 $my-app-warn:    mat-palette($mat-deep-orange);
@@ -11,3 +8,11 @@ $my-app-warn:    mat-palette($mat-deep-orange);
 $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
 
 @include angular-material-theme($my-app-theme);
+
+.contents-sidenav {
+    background-color: #e0e0e0;
+}
+
+.banner-wrapper {
+    background-color: #607D8B;
+}

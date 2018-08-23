@@ -1,10 +1,12 @@
+@import "../assets/variables";
+
 button {
     text-transform: uppercase;
     font-weight: 500;
 }
 
 mat-sidenav {
-    background: lightgrey;
+    background: primary 100;
     position: fixed;
     top: 75px;
     height: 100%;
@@ -24,9 +26,8 @@ mat-sidenav-content {
     margin-left: -5px;
     cursor: pointer;
 }
-$warn: #b00020;
 
 .warning {
-    background-color: $warn;
+    background-color: $kurtzRed;
     margin-left: 5px;
 }
