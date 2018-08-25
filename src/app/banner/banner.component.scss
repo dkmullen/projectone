@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+#logo-area {
+    width: 250px;
+    cursor: pointer;
+    outline: 0;
+}
+
 #logo-icon, #logo-text {
     display: inline-block;
     margin-right: 10px;

@@ -1,5 +1,4 @@
 @import '~@angular/material/theming';
-
 @include mat-core();
 
 $mat-primary: (
@@ -77,21 +76,30 @@ $kurtz-theme: mat-light-theme($kurtz-primary, $kurtz-accent);
 
 // Other theme colors:
 $kurtzRed: #b00020;
+$kurtzLightGray: #e0e0e0;
 
 .banner-wrapper {
-    background-color: #000000;
+    background-color: black;
     color: white;
 }
 
 .contents-sidenav {
-    background-color: #e0e0e0;
+    background-color: $kurtzLightGray;
 }
 
 .contents-list a {
     text-decoration: none;
-    color: #000000;
+    color: black;
 
     &:hover {
-        color: #b00020;
+        color:$kurtzRed;
     }
+}
+
+.red {
+    background-color: $kurtzRed !important;
+}
+
+.banner-wrapper #logo-area a {
+    color: white;
 }
