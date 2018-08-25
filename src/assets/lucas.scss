@@ -2,20 +2,20 @@
 @include mat-core();
 
 $mat-primary: (
-    50 : #e0e0e0,
-    100 : #b3b3b3,
-    200 : #808080,
-    300 : #4d4d4d,
-    400 : #262626,
-    500 : #000000,
-    600 : #000000,
-    700 : #000000,
-    800 : #000000,
-    900 : #000000,
-    A100 : #a6a6a6,
-    A200 : #8c8c8c,
-    A400 : #737373,
-    A700 : #666666,
+    50 : #e3eaeb,
+    100 : #bacacd,
+    200 : #8ca6ac,
+    300 : #5e828a,
+    400 : #3c6871,
+    500 : #194d58,
+    600 : #164650,
+    700 : #123d47,
+    800 : #0e343d,
+    900 : #08252d,
+    A100 : #68d9ff,
+    A200 : #35ccff,
+    A400 : #02c0ff,
+    A700 : #00ade7,
     contrast: (
         50 : #000000,
         100 : #000000,
@@ -29,26 +29,26 @@ $mat-primary: (
         900 : #ffffff,
         A100 : #000000,
         A200 : #000000,
-        A400 : #ffffff,
+        A400 : #000000,
         A700 : #ffffff,
     )
 );
 
 $mat-accent: (
-    50 : #fff8e1,
-    100 : #ffecb5,
-    200 : #ffe083,
-    300 : #ffd451,
-    400 : #ffca2c,
-    500 : #ffc107,
-    600 : #ffbb06,
-    700 : #ffb305,
-    800 : #ffab04,
-    900 : #ff9e02,
+    50 : #fffcf3,
+    100 : #fff7e0,
+    200 : #fff2cc,
+    300 : #ffedb8,
+    400 : #ffe9a8,
+    500 : #ffe599,
+    600 : #ffe291,
+    700 : #ffde86,
+    800 : #ffda7c,
+    900 : #ffd36b,
     A100 : #ffffff,
-    A200 : #fffaf2,
-    A400 : #ffe4bf,
-    A700 : #ffd9a6,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #fffbf3,
     contrast: (
         50 : #000000,
         100 : #000000,
@@ -68,18 +68,18 @@ $mat-accent: (
 );
 
 // To style the material components
-$kurtz-primary: mat-palette($mat-primary, 500, 100, A700);
-$kurtz-accent:  mat-palette($mat-accent);
-$kurtz-theme: mat-light-theme($kurtz-primary, $kurtz-accent);
-@include angular-material-theme($kurtz-theme);
+$lucas-primary: mat-palette($mat-primary, 500, 100, A700);
+$lucas-accent:  mat-palette($mat-accent);
+$lucas-theme: mat-light-theme($lucas-primary, $lucas-accent);
+@include angular-material-theme($lucas-theme);
 
 // Theme colors:
-$primary: #000000;
-$accent: #ffc107;
-$primary-dark: #000000;
-$primary-light: #e0e0e0;
+$primary: #194d58;
+$accent: #ffe599;
+$primary-dark: #0e343d;
+$primary-light: #8ca6ac;
 $text-light: #ffffff;
-$text-dark: #000000;
+$text-dark: #0e343d;
 $text-alt: #737373;
 $red: #b00020;
 
@@ -106,4 +106,3 @@ $red: #b00020;
         color:$red;
     }
 }
-
