@@ -5,6 +5,10 @@ button {
     font-weight: 500;
 }
 
+.mat-drawer-container {
+    height: 100%;
+}
+
 mat-sidenav {
     background: primary 100;
     position: fixed;
@@ -16,8 +20,11 @@ mat-sidenav {
 }
 
 mat-sidenav-content {
+    top: 75px;
+    height: 100%;
     padding: 1.5rem;
     max-width: 800px;
+    margin-bottom: 100px;
     
 }
 

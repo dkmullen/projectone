@@ -16,9 +16,11 @@ import { BannerComponent } from './banner/banner.component';
 import { PageoneComponent } from './pages/pageone/pageone.component';
 import { ContentsComponent } from './contents/contents.component';
 import { PagefourComponent } from './pages/pagefour/pagefour/pagefour.component';
+import { PagethreeComponent } from './pages/pagethree/pagethree/pagethree.component';
 
 const appRoutes: Routes = [
   { path: '', component: PageoneComponent },
+  { path: 'pagethree', component: PagethreeComponent },
   { path: 'pagefour', component: PagefourComponent }
 ]
 
@@ -28,7 +30,8 @@ const appRoutes: Routes = [
     BannerComponent,
     PageoneComponent,
     ContentsComponent,
-    PagefourComponent
+    PagefourComponent,
+    PagethreeComponent
   ],
   imports: [
     BrowserModule,
