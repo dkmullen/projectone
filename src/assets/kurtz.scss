@@ -93,6 +93,15 @@ $red: #b00020;
 .text-alt-color { color: $text-alt; }
 .red { background-color: $red !important; }
 
+// Or, to set variables by use rather than color.
+.banner-background-color { background: #000000; }
+.banner-text-color { color: #ffffff; }
+.sidenav-background-color { background: #e0e0e0; }
+.sidenav-text-color { color: #000000; opacity: .87; }
+.sidenav-hover-color { color: #b00020 }
+.main-area-background-color { background: #ffffff }
+.main-area-text-color { color: #000000; opacity: .87; }
+
 // Sets default text color 
 .mat-drawer, .mat-drawer-container {
     color: $text-dark;

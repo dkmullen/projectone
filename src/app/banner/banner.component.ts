@@ -7,11 +7,4 @@ import { Component, Input } from '@angular/core';
 })
 export class BannerComponent {
   @Input() sidenav;
-
-  opened: boolean = true;
-
-  toggle() {
-    this.opened = !this.opened;
-  }
-
 }

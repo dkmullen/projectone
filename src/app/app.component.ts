@@ -12,10 +12,15 @@ export class AppComponent {
 
   @HostListener('window:resize', ['$event'])
     onResize(event) {
-      if (event.target.innerWidth < 855) {
+      if (event.target.innerWidth < 1110) {
         this.opened = false;
       } else {
         this.opened = true;
       }
+  }
+
+  toggle() {
+    this.opened = !this.opened;
+    console.log(this.opened)
   }
 }
