@@ -72,38 +72,40 @@ $kurtz-primary: mat-palette($mat-primary, 500, 100, A700);
 $kurtz-accent:  mat-palette($mat-accent);
 $kurtz-theme: mat-light-theme($kurtz-primary, $kurtz-accent);
 
-.kurtz-theme {
+.kurtz-dark-theme {
     @include angular-material-theme($kurtz-theme);
 
     // Theme colors:
     $primary: #000000;
     $accent: #ffc107;
     $primary-dark: #000000;
-    $primary-light: #e0e0e0;
+    $primary-light: #262626;
     $text-dark: #000000;
     $text-light: #ffffff;
     $text-alt: #737373;
-    $main-background: #ffffff;
+    $main-background: #262626;
     $red: #b00020;
 
     // Components of this app, and  cooresponding colors
     .banner-background-color { background: $primary; }
     .banner-text-color { color: $text-light; }
-    .sidenav-background-color { background: $primary-light; }
-    .sidenav-text-color { color: $text-dark; opacity: .87; }
+    .sidenav-background-color { background: $primary-dark; }
+    .sidenav-text-color { color: $primary; opacity: .87; }
     .sidenav-hover-color { color: $red; }
-    .main-area-background-color { background: $main-background }
-    .main-area-text-color { color: $text-dark; opacity: .87; }
     .btn-red { background-color: $red !important; color: $text-light; }
 
     // Sets default text color 
     .mat-drawer, .mat-drawer-container {
-        color: $text-dark;
+        color: $text-light;
         opacity: .87;
     }
 
+    .mat-drawer-container {
+        background: $primary-light;
+    }
+
     .contents-list a {
-        color: $text-dark;
+        color: $text-light;
 
         &:hover {
             color:$red;

@@ -1,3 +1,4 @@
+<div class="willard">
 <app-banner [sidenav]="sidenav"></app-banner>
 <mat-sidenav-container>
   <mat-sidenav 
@@ -7,7 +8,7 @@
     [(opened)]="opened" 
     (opened)="events.push('open')"
     (closed)="events.push('close')">
-    <app-contents></app-contents>
+    <app-sidenav></app-sidenav>
   </mat-sidenav>
 
   <mat-sidenav-content>
@@ -15,7 +16,15 @@
     <p><mat-checkbox [(ngModel)]="opened">sidenav.opened</mat-checkbox></p>
     <button mat-flat-button>Primary</button>
     <button mat-flat-button color="accent">Accent</button>
-    <button mat-flat-button class="red">Red!</button>
+    <button mat-flat-button class="btn-red">Red!</button>
+    <p></p>
+    <mat-form-field>
+      <mat-select placeholder="Favorite food">
+        <mat-option *ngFor="let food of foods" [value]="food.value">
+          {{food.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
   </mat-sidenav-content>
 </mat-sidenav-container>
-
+</div>

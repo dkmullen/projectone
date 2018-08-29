@@ -1,4 +1,9 @@
-import { Component, HostListener, Input } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+
+export interface Food {
+  value: string;
+  viewValue: string;
+}
 
 @Component({
   selector: 'app-root',
@@ -6,7 +11,7 @@ import { Component, HostListener, Input } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   events: string[] = [];
   opened: boolean = true;
 
@@ -19,8 +24,18 @@ export class AppComponent {
       }
   }
 
-  toggle() {
-    this.opened = !this.opened;
-    console.log(this.opened)
+  ngOnInit() {
+    let currentTheme = window.localStorage.getItem('currentTheme');
+    if (currentTheme) {
+      document.getElementById('body').classList.add(currentTheme);
+    } else {
+      document.getElementById('body').classList.add('kurtz-theme');
+    }
   }
+
+  foods: Food[] = [
+    {value: 'steak-0', viewValue: 'Steak'},
+    {value: 'pizza-1', viewValue: 'Pizza'},
+    {value: 'tacos-2', viewValue: 'Tacos'}
+  ];
 }
