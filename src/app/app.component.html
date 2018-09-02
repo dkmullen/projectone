@@ -7,7 +7,7 @@
     [(opened)]="opened" 
     (opened)="events.push('open')"
     (closed)="events.push('close')">
-    <app-sidenav></app-sidenav>
+    <app-sidenav [sidenav]="sidenav"></app-sidenav>
   </mat-sidenav>
 
   <mat-sidenav-content>
