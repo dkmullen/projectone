@@ -3,7 +3,12 @@
     <div id="logo-icon"><i class="material-icons">volume_up</i></div>
     <div id="logo-text"><h5>{{"Book Notes" | uppercase}}</h5></div>
   </a></div>
-  <!-- <div (click)="changeTheme('kurtz-dark-theme')">Hello</div> -->
+  <div id="theme-icon">
+    <i class="material-icons" 
+      (click)="changeTheme()"
+      matTooltip="Switch between light and dark themes"
+      >format_color_fill</i>
+  </div>
   <div id="menu-icon">
     <i class="material-icons" (click)="sidenav.toggle()">menu</i>
   </div>
