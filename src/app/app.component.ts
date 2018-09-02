@@ -1,10 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 
-export interface Food {
-  value: string;
-  viewValue: string;
-}
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,18 +8,30 @@ export interface Food {
 
 export class AppComponent implements OnInit {
   events: string[] = [];
-  opened: boolean = true;
+  opened: boolean;
+  sidenavMode: string;
+  breakpoint: number = 1110;
 
   @HostListener('window:resize', ['$event'])
     onResize(event) {
-      if (event.target.innerWidth < 1110) {
+      if (event.target.innerWidth <= this.breakpoint) {
         this.opened = false;
+        this.sidenavMode = 'over';
       } else {
         this.opened = true;
+        this.sidenavMode = 'side';
       }
   }
 
   ngOnInit() {
+    if (window.innerWidth <= this.breakpoint) {
+      this.opened = false;
+      this.sidenavMode = 'over';
+    } else {
+      this.opened = true;
+      this.sidenavMode = 'side';
+    }
+  
     let currentTheme = window.localStorage.getItem('currentTheme');
     if (currentTheme) {
       document.getElementById('body').classList.add(currentTheme);
@@ -32,10 +39,4 @@ export class AppComponent implements OnInit {
       document.getElementById('body').classList.add('kurtz-theme');
     }
   }
-
-  foods: Food[] = [
-    {value: 'steak-0', viewValue: 'Steak'},
-    {value: 'pizza-1', viewValue: 'Pizza'},
-    {value: 'tacos-2', viewValue: 'Tacos'}
-  ];
 }

@@ -24,3 +24,9 @@
     right: 15px;
     cursor: pointer;
 }
+
+@media screen and (min-width: 1111px) {
+    #menu-icon i {
+        display: none;
+    }
+}

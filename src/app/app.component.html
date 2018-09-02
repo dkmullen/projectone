@@ -1,10 +1,9 @@
-<div class="willard">
-<app-banner [sidenav]="sidenav"></app-banner>
+<app-topbar [sidenav]="sidenav"></app-topbar>
 <mat-sidenav-container>
   <mat-sidenav 
     #sidenav 
     class="contents-sidenav sidenav-background-color"
-    mode="side" 
+    mode={{sidenavMode}} 
     [(opened)]="opened" 
     (opened)="events.push('open')"
     (closed)="events.push('close')">
@@ -17,14 +16,5 @@
     <button mat-flat-button>Primary</button>
     <button mat-flat-button color="accent">Accent</button>
     <button mat-flat-button class="btn-red">Red!</button>
-    <p></p>
-    <mat-form-field>
-      <mat-select placeholder="Favorite food">
-        <mat-option *ngFor="let food of foods" [value]="food.value">
-          {{food.viewValue}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
   </mat-sidenav-content>
 </mat-sidenav-container>
-</div>
