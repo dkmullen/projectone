@@ -10,8 +10,8 @@ mat-sidenav-content {
     margin: 75px auto;
     padding: 1.5rem;
     max-width: 800px; 
-    height: 100vh; 
-    overflow: hidden;  
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 #menu-icon i {
