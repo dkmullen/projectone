@@ -1,13 +1,16 @@
-.banner-wrapper {
+.topbar-wrapper {
     height: 75px;
     padding: 15px;
     box-sizing: border-box;
+    display: inline-block;
+    width: 100vw;
 }
 
 #logo-area {
     width: 250px;
     cursor: pointer;
     outline: 0;
+    display: inline-block;
 }
 
 #logo-icon, #logo-text {
@@ -16,25 +19,26 @@
     padding-top: 10px;
 }
 
-#theme-icon i {
+#theme-icon {
     display: inline-block;
-    position: absolute;
-    top: 25px;
-    right: 75px;
+    // position: absolute;
+    // top: 25px;
+    // right: 75px;
     cursor: pointer;
 }
 
-#menu-icon i {
+#menu-icon {
     display: inline-block;
-    font-size: 48px;
     position: absolute;
     top: 15px;
-    right: 15px;
+    right: 25px;
     cursor: pointer;
+
+    i { font-size: 48px; }
 }
 
 @media screen and (min-width: 1111px) {
-    #menu-icon i {
+    #menu-icon {
         display: none;
     }
 }

@@ -87,8 +87,8 @@ $kurtz-theme: mat-light-theme($kurtz-primary, $kurtz-accent);
     $red: #b00020;
 
     // Components of this app, and  cooresponding colors
-    .banner-background-color { background: $primary; }
-    .banner-text-color { color: $text-light; }
+    .topbar-background-color { background: $primary; }
+    .topbar-text-color { color: $text-light; }
     .sidenav-background-color { background: $primary-light; }
     .sidenav-text-color { color: $text-dark; opacity: .87; }
     .sidenav-hover-color { color: $red; }
