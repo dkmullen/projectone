@@ -33,10 +33,11 @@ export class AppComponent implements OnInit {
     }
   
     let currentTheme = window.localStorage.getItem('currentTheme');
+    let body = document.querySelector('body');
     if (currentTheme) {
-      document.getElementById('body').classList.add(currentTheme);
+      body.classList.add(currentTheme);
     } else {
-      document.getElementById('body').classList.add('kurtz-theme');
+      body.classList.add('kurtz-theme');
     }
   }
 }

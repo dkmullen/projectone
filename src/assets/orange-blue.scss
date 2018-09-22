@@ -20,8 +20,8 @@ $orange-blue-theme: mat-light-theme($orange-blue-primary, $orange-blue-accent);
     $red: #dc322f;
 
     // Components of this app, and  cooresponding colors
-    .banner-background-color { background: $primary; }
-    .banner-text-color { color: $text-light; }
+    .topbar-background-color { background: $primary; }
+    .topbar-text-color { color: $text-light; }
     .sidenav-background-color { background: $text-alt; }
     .sidenav-text-color { color: $text-light; opacity: .87; }
     .sidenav-hover-color { color: $primary-dark; }

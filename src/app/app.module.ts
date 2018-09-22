@@ -10,13 +10,12 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSidenavModule } from '@angular/material/sidenav';
 
-
 import { AppComponent } from './app.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { PageoneComponent } from './pages/pageone/pageone.component';
 import { PagetwoComponent } from './pages/pagetwo/pagetwo.component';
-import { PagefourComponent } from './pages/pagefour/pagefour/pagefour.component';
 import { PagethreeComponent } from './pages/pagethree/pagethree/pagethree.component';
+import { PagefourComponent } from './pages/pagefour/pagefour/pagefour.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 
 const appRoutes: Routes = [
@@ -29,12 +28,12 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    TopbarComponent,
     PageoneComponent,
-    PagefourComponent,
+    PagetwoComponent,
     PagethreeComponent,
+    PagefourComponent,
     SidenavComponent,
-    PagetwoComponent
+    TopbarComponent,
   ],
   imports: [
     BrowserModule,
