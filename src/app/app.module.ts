@@ -9,6 +9,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { AppComponent } from './app.component';
 import { TopbarComponent } from './topbar/topbar.component';
@@ -42,8 +43,9 @@ const appRoutes: Routes = [
     MatButtonModule,
     MatCheckboxModule,
     MatInputModule,
-    MatSidenavModule,
     MatSelectModule,
+    MatSidenavModule,
+    MatSlideToggleModule,
     ReactiveFormsModule,
     RouterModule.forRoot(appRoutes)
   ],
