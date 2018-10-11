@@ -17,13 +17,15 @@ import { PageoneComponent } from './pages/pageone/pageone.component';
 import { PagetwoComponent } from './pages/pagetwo/pagetwo.component';
 import { PagethreeComponent } from './pages/pagethree/pagethree/pagethree.component';
 import { PagefourComponent } from './pages/pagefour/pagefour/pagefour.component';
+import { PagefiveComponent } from './pages/pagefive/pagefive.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 
 const appRoutes: Routes = [
   { path: '', component: PageoneComponent },
   { path: 'pagetwo', component: PagetwoComponent },
   { path: 'pagethree', component: PagethreeComponent },
-  { path: 'pagefour', component: PagefourComponent }
+  { path: 'pagefour', component: PagefourComponent },
+  { path: 'pagefive', component: PagefiveComponent }
 ]
 
 @NgModule({
@@ -33,6 +35,7 @@ const appRoutes: Routes = [
     PagetwoComponent,
     PagethreeComponent,
     PagefourComponent,
+    PagefiveComponent,
     SidenavComponent,
     TopbarComponent,
   ],
