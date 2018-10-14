@@ -77,3 +77,19 @@ hr {
     opacity: .3;
     margin: 1.5rem 0;
 }
+
+.footnotes {
+    font-size: 1.2rem;
+    line-height: 1.15;
+}
+
+.footnote-indicator {
+    position: relative;
+    top: 4px;
+    margin-top: -4px;
+}
+
+a, a:visited {
+    color: #72A3F8;
+    font-weight: 500;
+}
