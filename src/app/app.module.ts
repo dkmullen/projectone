@@ -21,6 +21,7 @@ import { PagethreeComponent } from './pages/pagethree/pagethree/pagethree.compon
 import { PagefourComponent } from './pages/pagefour/pagefour/pagefour.component';
 import { PagefiveComponent } from './pages/pagefive/pagefive.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { ButtonBarComponent } from './pages/button-bar/button-bar.component';
 
 const appRoutes: Routes = [
   { path: '', component: PageoneComponent },
@@ -40,6 +41,7 @@ const appRoutes: Routes = [
     PagefiveComponent,
     SidenavComponent,
     TopbarComponent,
+    ButtonBarComponent,
   ],
   imports: [
     BrowserModule,

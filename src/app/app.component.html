@@ -12,9 +12,7 @@
 
   <mat-sidenav-content>
     <router-outlet></router-outlet>
-    <p><mat-checkbox [(ngModel)]="opened">sidenav.opened</mat-checkbox></p>
-    <button mat-flat-button>Primary</button>
-    <button mat-flat-button color="accent">Accent</button>
-    <button mat-flat-button class="btn-red">Red!</button>
+    <app-button-bar></app-button-bar>
   </mat-sidenav-content>
+
 </mat-sidenav-container>
