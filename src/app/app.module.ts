@@ -15,33 +15,37 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { AppComponent } from './app.component';
 import { TopbarComponent } from './topbar/topbar.component';
-import { PageoneComponent } from './pages/pageone/pageone.component';
-import { PagetwoComponent } from './pages/pagetwo/pagetwo.component';
-import { PagethreeComponent } from './pages/pagethree/pagethree/pagethree.component';
-import { PagefourComponent } from './pages/pagefour/pagefour/pagefour.component';
-import { PagefiveComponent } from './pages/pagefive/pagefive.component';
+import { ButtonBarComponent } from './button-bar/button-bar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
-import { ButtonBarComponent } from './pages/button-bar/button-bar.component';
+
+import { PageoneComponent } from './pages/pageone/pageone.component';
+import { ShilohComponent } from './pages/book-notes/shiloh/shiloh.component';
+import { GoToWarComponent } from './pages/book-notes/go-to-war/go-to-war.component';
+import { BullComponent } from './pages/book-notes/bull/bull.component';
+import { PhantomBlooperComponent } from './pages/book-notes/phantom-blooper/phantom-blooper.component';
+import { MormonsComponent } from './pages/articles/mormons/mormons.component';
 
 const appRoutes: Routes = [
   { path: '', component: PageoneComponent },
-  { path: 'pagetwo', component: PagetwoComponent },
-  { path: 'pagethree', component: PagethreeComponent },
-  { path: 'pagefour', component: PagefourComponent },
-  { path: 'pagefive', component: PagefiveComponent }
+  { path: 'tuesdays-with-mormons', component: MormonsComponent },
+  { path: 'what-i-saw-of-shiloh', component: ShilohComponent },
+  { path: 'the-phantom-blooper', component: PhantomBlooperComponent },
+  { path: 'what-it-is-like-to-go-to-war', component: GoToWarComponent },
+  { path: 'on-bull', component: BullComponent }
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
     PageoneComponent,
-    PagetwoComponent,
-    PagethreeComponent,
-    PagefourComponent,
-    PagefiveComponent,
     SidenavComponent,
     TopbarComponent,
     ButtonBarComponent,
+    ShilohComponent,
+    GoToWarComponent,
+    BullComponent,
+    PhantomBlooperComponent,
+    MormonsComponent,
   ],
   imports: [
     BrowserModule,
