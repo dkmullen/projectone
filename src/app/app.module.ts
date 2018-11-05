@@ -24,6 +24,7 @@ import { GoToWarComponent } from './pages/book-notes/go-to-war/go-to-war.compone
 import { BullComponent } from './pages/book-notes/bull/bull.component';
 import { PhantomBlooperComponent } from './pages/book-notes/phantom-blooper/phantom-blooper.component';
 import { MormonsComponent } from './pages/articles/mormons/mormons.component';
+import { ArticleListService } from './services/articlelist.service';
 
 const appRoutes: Routes = [
   { path: '', component: PageoneComponent },
@@ -61,7 +62,7 @@ const appRoutes: Routes = [
     ReactiveFormsModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [ArticleListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
