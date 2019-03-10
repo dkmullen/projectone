@@ -13,8 +13,6 @@ export class YECComponent implements OnInit {
 
   ngOnInit() {
     this.articles = this.articleList.articles;
-    console.log(this.articles)
-
   }
 
 }
