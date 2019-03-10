@@ -2,17 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { ArticleListService } from '../../../services/articlelist.service';
 
 @Component({
-  selector: 'app-accepting-the-whole-bible',
-  templateUrl: './accepting-the-whole-bible.component.html',
-  styleUrls: ['./accepting-the-whole-bible.component.css']
+  selector: 'app-yec',
+  templateUrl: './yec.html',
+  styleUrls: []
 })
-export class AcceptingTheWholeBibleComponent implements OnInit {
+export class YECComponent implements OnInit {
   public articles: any;
 
   constructor(private articleList: ArticleListService) { }
 
   ngOnInit() {
     this.articles = this.articleList.articles;
+    console.log(this.articles)
 
   }
 
