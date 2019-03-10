@@ -1,13 +1,16 @@
 <div class="contents-wrapper">
   <h6>Articles:</h6>
   <ul class="contents-list">
+    <li routerLinkActive="active" (click)="closeIfMoblie()"><a routerLink="{{articles[0]}}">Hello, Friend</a></li>
     <li routerLinkActive="active" (click)="closeIfMoblie()"><a routerLink="{{articles[1]}}">Tuesdays with Mormons</a></li>
+    <li routerLinkActive="active" (click)="closeIfMoblie()"><a routerLink="{{articles[2]}}">YEC</a></li>
+
   </ul>
   <h6 id="book-notes-headline">Book Notes:</h6>
   <ul class="contents-list">
-    <li routerLinkActive="active" (click)="closeIfMoblie()"><a routerLink={{articles[2]}}>What I Saw of Shiloh</a></li>
-    <li routerLinkActive="active" (click)="closeIfMoblie()"><a routerLink={{articles[3]}}>The Phantom Blooper</a></li>
-    <li routerLinkActive="active" (click)="closeIfMoblie()"><a routerLink={{articles[4]}}>What It Is Like to Go to War</a></li>
-    <li routerLinkActive="active" (click)="closeIfMoblie()"><a routerLink={{articles[5]}}>On Bull...</a></li>
+    <li routerLinkActive="active" (click)="closeIfMoblie()"><a routerLink={{articles[3]}}>What I Saw of Shiloh</a></li>
+    <li routerLinkActive="active" (click)="closeIfMoblie()"><a routerLink={{articles[4]}}>The Phantom Blooper</a></li>
+    <li routerLinkActive="active" (click)="closeIfMoblie()"><a routerLink={{articles[5]}}>What It Is Like to Go to War</a></li>
+    <li routerLinkActive="active" (click)="closeIfMoblie()"><a routerLink={{articles[6]}}>On Bull...</a></li>
   </ul>
 </div>

@@ -19,16 +19,19 @@ import { ButtonBarComponent } from './button-bar/button-bar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 
 import { PageoneComponent } from './pages/pageone/pageone.component';
+import { AcceptingTheWholeBibleComponent } from './pages/articles/accepting-the-whole-bible/accepting-the-whole-bible.component';
 import { ShilohComponent } from './pages/book-notes/shiloh/shiloh.component';
 import { GoToWarComponent } from './pages/book-notes/go-to-war/go-to-war.component';
 import { BullComponent } from './pages/book-notes/bull/bull.component';
 import { PhantomBlooperComponent } from './pages/book-notes/phantom-blooper/phantom-blooper.component';
 import { MormonsComponent } from './pages/articles/mormons/mormons.component';
+
 import { ArticleListService } from './services/articlelist.service';
 
 const appRoutes: Routes = [
   { path: '', component: PageoneComponent },
   { path: 'tuesdays-with-mormons', component: MormonsComponent },
+  { path: 'yec', component: AcceptingTheWholeBibleComponent },
   { path: 'what-i-saw-of-shiloh', component: ShilohComponent },
   { path: 'the-phantom-blooper', component: PhantomBlooperComponent },
   { path: 'what-it-is-like-to-go-to-war', component: GoToWarComponent },
@@ -47,6 +50,7 @@ const appRoutes: Routes = [
     BullComponent,
     PhantomBlooperComponent,
     MormonsComponent,
+    AcceptingTheWholeBibleComponent,
   ],
   imports: [
     BrowserModule,
