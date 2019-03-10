@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 import { ArticleListService } from '../services/articlelist.service';
 
@@ -10,8 +11,11 @@ import { ArticleListService } from '../services/articlelist.service';
 })
 export class ButtonBarComponent implements OnInit {
   public articles: any;
+  public currentUrl: string = '/';
+  public urlIndex;
 
-  constructor(protected router: Router, public articleList: ArticleListService) { }
+  constructor(protected router: Router, public articleList: ArticleListService,
+    private location: Location) { }
 
   ngOnInit() {
     this.articles = this.articleList.articles;
@@ -30,10 +34,31 @@ export class ButtonBarComponent implements OnInit {
   }
   
   previousArticle() {
-    console.log('previous');
+    this.findCurrentPath();
+    if (this.urlIndex === 0) {
+      this.urlIndex = this.articles.length - 1;
+    } else {
+      this.urlIndex -= 1;
+    }
+    this.router.navigate(new Array('/').concat([this.articles[this.urlIndex]]))
   }
   nextArticle() {
-    console.log('next');
+    this.findCurrentPath();
+    if (this.urlIndex === this.articles.length - 1) {
+      this.urlIndex = 0;
+    } else {
+      this.urlIndex += 1;
+    }
+    this.router.navigate(new Array('/').concat([this.articles[this.urlIndex]]))
+  }
+
+  findCurrentPath() {
+    if (this.location.path().length > 0) {
+      this.currentUrl = this.location.path().substr(1);
+      this.urlIndex = this.articles.indexOf(this.currentUrl);
+    } else {
+      this.urlIndex = 0;
+    }
   }
 
 
