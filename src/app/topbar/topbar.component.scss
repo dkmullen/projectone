@@ -19,6 +19,10 @@
     padding-top: 10px;
 }
 
+#alt-logo-text {
+    display: none;
+}
+
 #theme-icon {
     display: inline-block;
     // position: absolute;
@@ -40,5 +44,19 @@
 @media screen and (min-width: 1111px) {
     #menu-icon {
         display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #logo-text {
+        display: none;
+    }
+    #logo-area {
+        width: 120px;
+    }
+    #alt-logo-text {
+        display: inline-block;
+        margin-right: 10px;
+        padding-top: 10px;
     }
 }
